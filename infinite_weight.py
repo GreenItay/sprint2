@@ -1,8 +1,14 @@
+import os
+import sys
+
+sys.path += [os.getcwd()]
+
 import networkx as nx
 import typing
+
 from algorithmics.utils.coordinate import Coordinate
 from algorithmics.enemy.radar import Radar
-from algorithmics.enemy import Enemy
+from algorithmics.enemy.enemy import Enemy
 def create_radar_graph(source: Coordinate, target :Coordinate, radar : Radar):
     """
     :param: source - Coordinate of beginning on the radar
